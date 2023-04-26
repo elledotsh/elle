@@ -1,0 +1,28 @@
+{
+    "name": "elle/elle",
+    "description": "micro, meta-framework for laravel",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Bryce",
+            "email": "bryce@brycedev.com"
+        }
+    ],
+    "require": {
+        "elle/framework": "@dev"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../framework",
+            "options": {
+                "symlink": true
+            }
+        }
+    ]
+}
