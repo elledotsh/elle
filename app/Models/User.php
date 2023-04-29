@@ -10,7 +10,7 @@ class User extends BaseModel
         'password'
     ];
 
-    public function endpoints() : array
+    public function endpoints(): array
     {
         return [
             'index' => $this->hasIndexRoute(),
@@ -18,7 +18,7 @@ class User extends BaseModel
         ];
     }
 
-    public function relationships() : array
+    public function relationships(): array
     {
         return [
             'posts' => $this->hasMany(Post::class),
